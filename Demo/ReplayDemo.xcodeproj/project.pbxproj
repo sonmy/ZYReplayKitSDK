@@ -14,6 +14,13 @@
 		9C6F55131F8DB49900212209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C6F55111F8DB49900212209 /* LaunchScreen.storyboard */; };
 		9C6F55161F8DB49900212209 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6F55151F8DB49900212209 /* main.m */; };
 		9C6F55201F8DB49900212209 /* ReplayDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6F551F1F8DB49900212209 /* ReplayDemoTests.m */; };
+		9CC14A231F8F027000DFC8F2 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC14A221F8F027000DFC8F2 /* ReplayKit.framework */; };
+		9CC14A271F8F027000DFC8F2 /* SampleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC14A261F8F027000DFC8F2 /* SampleHandler.m */; };
+		9CC14A2E1F8F027000DFC8F2 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC14A221F8F027000DFC8F2 /* ReplayKit.framework */; };
+		9CC14A301F8F027000DFC8F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC14A2F1F8F027000DFC8F2 /* UIKit.framework */; };
+		9CC14A341F8F027000DFC8F2 /* BroadcastSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC14A331F8F027000DFC8F2 /* BroadcastSetupViewController.m */; };
+		9CC14A381F8F027000DFC8F2 /* ZYLiveSetupUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9CC14A2D1F8F027000DFC8F2 /* ZYLiveSetupUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9CC14A3B1F8F027000DFC8F2 /* ZYLive.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9CC14A201F8F027000DFC8F2 /* ZYLive.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +31,36 @@
 			remoteGlobalIDString = 9C6F55021F8DB49900212209;
 			remoteInfo = ReplayDemo;
 		};
+		9CC14A361F8F027000DFC8F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C6F54FB1F8DB49900212209 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CC14A2C1F8F027000DFC8F2;
+			remoteInfo = ZYLiveSetupUI;
+		};
+		9CC14A391F8F027000DFC8F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C6F54FB1F8DB49900212209 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CC14A1F1F8F027000DFC8F2;
+			remoteInfo = ZYLive;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9CC14A421F8F027000DFC8F2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9CC14A381F8F027000DFC8F2 /* ZYLiveSetupUI.appex in Embed App Extensions */,
+				9CC14A3B1F8F027000DFC8F2 /* ZYLive.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9C6F55031F8DB49900212209 /* ReplayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReplayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +76,16 @@
 		9C6F551B1F8DB49900212209 /* ReplayDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReplayDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6F551F1F8DB49900212209 /* ReplayDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReplayDemoTests.m; sourceTree = "<group>"; };
 		9C6F55211F8DB49900212209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CC14A201F8F027000DFC8F2 /* ZYLive.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ZYLive.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CC14A221F8F027000DFC8F2 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		9CC14A251F8F027000DFC8F2 /* SampleHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleHandler.h; sourceTree = "<group>"; };
+		9CC14A261F8F027000DFC8F2 /* SampleHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleHandler.m; sourceTree = "<group>"; };
+		9CC14A281F8F027000DFC8F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CC14A2D1F8F027000DFC8F2 /* ZYLiveSetupUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ZYLiveSetupUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CC14A2F1F8F027000DFC8F2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9CC14A321F8F027000DFC8F2 /* BroadcastSetupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BroadcastSetupViewController.h; sourceTree = "<group>"; };
+		9CC14A331F8F027000DFC8F2 /* BroadcastSetupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BroadcastSetupViewController.m; sourceTree = "<group>"; };
+		9CC14A351F8F027000DFC8F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +103,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9CC14A1D1F8F027000DFC8F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CC14A231F8F027000DFC8F2 /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CC14A2A1F8F027000DFC8F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CC14A2E1F8F027000DFC8F2 /* ReplayKit.framework in Frameworks */,
+				9CC14A301F8F027000DFC8F2 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +128,9 @@
 			children = (
 				9C6F55051F8DB49900212209 /* ReplayDemo */,
 				9C6F551E1F8DB49900212209 /* ReplayDemoTests */,
+				9CC14A241F8F027000DFC8F2 /* ZYLive */,
+				9CC14A311F8F027000DFC8F2 /* ZYLiveSetupUI */,
+				9CC14A211F8F027000DFC8F2 /* Frameworks */,
 				9C6F55041F8DB49900212209 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +140,8 @@
 			children = (
 				9C6F55031F8DB49900212209 /* ReplayDemo.app */,
 				9C6F551B1F8DB49900212209 /* ReplayDemoTests.xctest */,
+				9CC14A201F8F027000DFC8F2 /* ZYLive.appex */,
+				9CC14A2D1F8F027000DFC8F2 /* ZYLiveSetupUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +171,35 @@
 			path = ReplayDemoTests;
 			sourceTree = "<group>";
 		};
+		9CC14A211F8F027000DFC8F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CC14A221F8F027000DFC8F2 /* ReplayKit.framework */,
+				9CC14A2F1F8F027000DFC8F2 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CC14A241F8F027000DFC8F2 /* ZYLive */ = {
+			isa = PBXGroup;
+			children = (
+				9CC14A251F8F027000DFC8F2 /* SampleHandler.h */,
+				9CC14A261F8F027000DFC8F2 /* SampleHandler.m */,
+				9CC14A281F8F027000DFC8F2 /* Info.plist */,
+			);
+			path = ZYLive;
+			sourceTree = "<group>";
+		};
+		9CC14A311F8F027000DFC8F2 /* ZYLiveSetupUI */ = {
+			isa = PBXGroup;
+			children = (
+				9CC14A321F8F027000DFC8F2 /* BroadcastSetupViewController.h */,
+				9CC14A331F8F027000DFC8F2 /* BroadcastSetupViewController.m */,
+				9CC14A351F8F027000DFC8F2 /* Info.plist */,
+			);
+			path = ZYLiveSetupUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,10 +210,13 @@
 				9C6F54FF1F8DB49900212209 /* Sources */,
 				9C6F55001F8DB49900212209 /* Frameworks */,
 				9C6F55011F8DB49900212209 /* Resources */,
+				9CC14A421F8F027000DFC8F2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9CC14A371F8F027000DFC8F2 /* PBXTargetDependency */,
+				9CC14A3A1F8F027000DFC8F2 /* PBXTargetDependency */,
 			);
 			name = ReplayDemo;
 			productName = ReplayDemo;
@@ -141,6 +241,40 @@
 			productReference = 9C6F551B1F8DB49900212209 /* ReplayDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		9CC14A1F1F8F027000DFC8F2 /* ZYLive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CC14A3F1F8F027000DFC8F2 /* Build configuration list for PBXNativeTarget "ZYLive" */;
+			buildPhases = (
+				9CC14A1C1F8F027000DFC8F2 /* Sources */,
+				9CC14A1D1F8F027000DFC8F2 /* Frameworks */,
+				9CC14A1E1F8F027000DFC8F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZYLive;
+			productName = ZYLive;
+			productReference = 9CC14A201F8F027000DFC8F2 /* ZYLive.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9CC14A2C1F8F027000DFC8F2 /* ZYLiveSetupUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CC14A3C1F8F027000DFC8F2 /* Build configuration list for PBXNativeTarget "ZYLiveSetupUI" */;
+			buildPhases = (
+				9CC14A291F8F027000DFC8F2 /* Sources */,
+				9CC14A2A1F8F027000DFC8F2 /* Frameworks */,
+				9CC14A2B1F8F027000DFC8F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZYLiveSetupUI;
+			productName = ZYLiveSetupUI;
+			productReference = 9CC14A2D1F8F027000DFC8F2 /* ZYLiveSetupUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -152,12 +286,20 @@
 				TargetAttributes = {
 					9C6F55021F8DB49900212209 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					9C6F551A1F8DB49900212209 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 9C6F55021F8DB49900212209;
+					};
+					9CC14A1F1F8F027000DFC8F2 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Manual;
+					};
+					9CC14A2C1F8F027000DFC8F2 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -176,6 +318,8 @@
 			targets = (
 				9C6F55021F8DB49900212209 /* ReplayDemo */,
 				9C6F551A1F8DB49900212209 /* ReplayDemoTests */,
+				9CC14A1F1F8F027000DFC8F2 /* ZYLive */,
+				9CC14A2C1F8F027000DFC8F2 /* ZYLiveSetupUI */,
 			);
 		};
 /* End PBXProject section */
@@ -192,6 +336,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9C6F55191F8DB49900212209 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CC14A1E1F8F027000DFC8F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CC14A2B1F8F027000DFC8F2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -219,6 +377,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9CC14A1C1F8F027000DFC8F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CC14A271F8F027000DFC8F2 /* SampleHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CC14A291F8F027000DFC8F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CC14A341F8F027000DFC8F2 /* BroadcastSetupViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -226,6 +400,16 @@
 			isa = PBXTargetDependency;
 			target = 9C6F55021F8DB49900212209 /* ReplayDemo */;
 			targetProxy = 9C6F551C1F8DB49900212209 /* PBXContainerItemProxy */;
+		};
+		9CC14A371F8F027000DFC8F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CC14A2C1F8F027000DFC8F2 /* ZYLiveSetupUI */;
+			targetProxy = 9CC14A361F8F027000DFC8F2 /* PBXContainerItemProxy */;
+		};
+		9CC14A3A1F8F027000DFC8F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CC14A1F1F8F027000DFC8F2 /* ZYLive */;
+			targetProxy = 9CC14A391F8F027000DFC8F2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -357,12 +541,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2P9NMM6JZE;
+				CODE_SIGN_IDENTITY = "iPhone Developer: song mingyun (GF3P4LU7PS)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ReplayDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mys.ReplayDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.ReplayDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = DevSongmingyun;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -371,12 +557,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2P9NMM6JZE;
+				CODE_SIGN_IDENTITY = "iPhone Developer: song mingyun (GF3P4LU7PS)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ReplayDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mys.ReplayDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.ReplayDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = DevSongmingyun;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -411,6 +599,70 @@
 			};
 			name = Release;
 		};
+		9CC14A3D1F8F027000DFC8F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: song mingyun (GF3P4LU7PS)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2P9NMM6JZE;
+				INFOPLIST_FILE = ZYLiveSetupUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.ReplayDemo.ZYLiveSetupUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = DevSongmingyun;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CC14A3E1F8F027000DFC8F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: song mingyun (GF3P4LU7PS)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2P9NMM6JZE;
+				INFOPLIST_FILE = ZYLiveSetupUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.ReplayDemo.ZYLiveSetupUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = DevSongmingyun;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9CC14A401F8F027000DFC8F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: song mingyun (GF3P4LU7PS)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2P9NMM6JZE;
+				INFOPLIST_FILE = ZYLive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.ReplayDemo.ZYLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = DevSongmingyun;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CC14A411F8F027000DFC8F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: song mingyun (GF3P4LU7PS)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2P9NMM6JZE;
+				INFOPLIST_FILE = ZYLive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.ReplayDemo.ZYLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = DevSongmingyun;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -437,6 +689,24 @@
 			buildConfigurations = (
 				9C6F55281F8DB49900212209 /* Debug */,
 				9C6F55291F8DB49900212209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CC14A3C1F8F027000DFC8F2 /* Build configuration list for PBXNativeTarget "ZYLiveSetupUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CC14A3D1F8F027000DFC8F2 /* Debug */,
+				9CC14A3E1F8F027000DFC8F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CC14A3F1F8F027000DFC8F2 /* Build configuration list for PBXNativeTarget "ZYLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CC14A401F8F027000DFC8F2 /* Debug */,
+				9CC14A411F8F027000DFC8F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
