@@ -30,6 +30,8 @@
 				<true/>
 			</dict>
 		</dict>
+		<key>NSExtensionMainStoryboard</key>
+		<string>main</string>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.broadcast-services-setupui</string>
 		<key>NSExtensionPrincipalClass</key>

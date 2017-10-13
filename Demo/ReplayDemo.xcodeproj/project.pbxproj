@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C6A82991F90577200AB9ACF /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C6A82981F90577200AB9ACF /* main.storyboard */; };
 		9C6F55081F8DB49900212209 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6F55071F8DB49900212209 /* AppDelegate.m */; };
 		9C6F550B1F8DB49900212209 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6F550A1F8DB49900212209 /* ViewController.m */; };
 		9C6F550E1F8DB49900212209 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C6F550C1F8DB49900212209 /* Main.storyboard */; };
@@ -63,6 +64,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9C6A82981F90577200AB9ACF /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		9C6F55031F8DB49900212209 /* ReplayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReplayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6F55061F8DB49900212209 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9C6F55071F8DB49900212209 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 			children = (
 				9CC14A321F8F027000DFC8F2 /* BroadcastSetupViewController.h */,
 				9CC14A331F8F027000DFC8F2 /* BroadcastSetupViewController.m */,
+				9C6A82981F90577200AB9ACF /* main.storyboard */,
 				9CC14A351F8F027000DFC8F2 /* Info.plist */,
 			);
 			path = ZYLiveSetupUI;
@@ -353,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C6A82991F90577200AB9ACF /* main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,12 +610,13 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2P9NMM6JZE;
 				INFOPLIST_FILE = ZYLiveSetupUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.ReplayDemo.ZYLiveSetupUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = DevSongmingyun;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -622,12 +627,13 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2P9NMM6JZE;
 				INFOPLIST_FILE = ZYLiveSetupUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.ReplayDemo.ZYLiveSetupUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = DevSongmingyun;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

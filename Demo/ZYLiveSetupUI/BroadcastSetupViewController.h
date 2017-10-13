@@ -10,5 +10,6 @@
 #import <ReplayKit/ReplayKit.h>
 
 @interface BroadcastSetupViewController : UIViewController
+- (IBAction)startAction:(id)sender;
 
 @end

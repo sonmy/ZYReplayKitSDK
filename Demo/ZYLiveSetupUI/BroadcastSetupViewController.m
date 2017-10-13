@@ -10,6 +10,11 @@
 
 @implementation BroadcastSetupViewController
 
+- (void)viewDidLoad
+{
+    NSLog(@"");
+}
+
 // Call this method when the user has finished interacting with the view controller and a broadcast stream can start
 - (void)userDidFinishSetup {
     
@@ -28,4 +33,7 @@
     [self.extensionContext cancelRequestWithError:[NSError errorWithDomain:@"YourAppDomain" code:-1 userInfo:nil]];
 }
 
+- (IBAction)startAction:(id)sender {
+    [self userDidFinishSetup];
+}
 @end
